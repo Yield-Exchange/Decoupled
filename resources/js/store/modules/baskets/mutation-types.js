@@ -1,0 +1,16 @@
+export const ADD_BASKET =
+    "ADD_BASKET";
+export const REMOVE_BASKET =
+    "REMOVE_BASKET";
+export const CLEAR_BASKETS =
+    "CLEAR_BASKETS";
+export const ADD_TRI_COLLATERALS =
+    "ADD_TRI_COLLATERALS";
+export const ADD_BI_COLLATERALS =
+    "ADD_BI_COLLATERALS";
+export const SET_COLLATERAL_ISSUERS =
+    "SET_COLLATERAL_ISSUERS";
+export const SET_BI_COLLATERAL =
+    "SET_BI_COLLATERAL";
+export const SET_TRI_COLLATERAL =
+    "SET_TRI_COLLATERAL";

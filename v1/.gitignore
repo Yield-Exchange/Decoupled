@@ -1,0 +1,24 @@
+uploads/*
+# exception to the rule
+!uploads/.gitkeep
+
+phpmyadmin*
+YEI/admindb*
+#config/ini.php
+vendor
+composer.lock
+.idea
+dummy.php
+/.htaccess
+
+# exception to the rule
+db-data/*
+!db-data/.gitkeep
+
+.env
+yield_db.sql
+plus-features.txt
+
+assets/.DS_Store
+.DS_Store
+

@@ -1,0 +1,62 @@
+.breaker{
+    clear:both;
+    overflow:hidden;
+    height:0;
+}
+
+#lgd_out_pg_pass, #lgd_out_str_m, #lgd_out_pg_opt{
+    width:100%;
+}
+
+#lgd_out_pg_pass{
+    background: none;
+    font-size: 14px;
+}
+
+.hidden{
+    display:none;
+}
+
+div.generate_button{
+    width:100%;
+    text-align:left;
+}
+div.generate_button input{
+    padding: 6px;
+    clear: both;
+}
+#lgd_out_pg_pass{
+    background-color:#ffffff;
+}
+
+#complexity{
+    border-radius: .25rem;
+    font-weight: bold;
+    cursor: default;
+    color: white;
+    background-color: #D0D0D0;
+    text-align: center;
+}
+
+div.char_type{
+    font-size: 12px;
+    color: #c2c2c2;
+    background: url('../../../assets/img/grey-x.jpeg') 8px -4px no-repeat;
+}
+
+.char_type_valid{
+    background: url('../../../assets/img/green-tick.jpeg') 8px -7px no-repeat !important;
+    color : #2cb117 !important;
+}
+
+div.chars_holder{
+    position:relative;
+    clear: both;
+}
+
+@media screen and (max-width: 578px) {
+    #login_img{
+        display: none;
+    }
+}
+

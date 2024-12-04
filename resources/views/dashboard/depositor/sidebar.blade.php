@@ -1,0 +1,1 @@
+@php (new \App\View\Navigation\SideBar('depositors',$organization))->render() @endphp

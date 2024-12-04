@@ -1,0 +1,27 @@
+# Disable directory browsing
+Options -Indexes
+header always set x-frame-options "SAMEORIGIN"
+Header set X-Content-Type-Options "nosniff"
+#Disable MIME type sniffing, which can e.g. make IE execute an innocent looking .img URL as a javascript.
+Header always edit Set-Cookie (.*) "$1; HTTPOnly; Secure"
+Header always edit Set-Cookie (.*) "$1; SameSite=strict"
+
+#php_value upload_max_filesize 100M
+#php_value post_max_size 100M
+
+# Turn mod_rewrite on
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-d
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}\.php -f
+RewriteRule ^(.*?)/?$ $1.php [L]
+
+RedirectMatch 404 /\.git
+RedirectMatch 403 /\.env
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

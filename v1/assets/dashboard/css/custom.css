@@ -1,0 +1,231 @@
+.custom-data-tables{
+    width: 100% !important;
+}
+.btn btn-primary mmy_btn btn-block:hover
+{
+    background-color:#2CADF5;
+}
+/*th{*/
+/*    font-size: 15px;*/
+/*    text-transform: capitalize;*/
+/*}*/
+/*td{*/
+/*    font-size: 16px;*/
+/*    text-transform: capitalize;*/
+/*}*/
+.form-control
+{
+    margin-top:8px;
+
+}
+.modal {
+    top: 10px;
+    right: 100px;
+    bottom: 0;
+    left: 0;
+    z-index: 10040;
+    overflow: auto;
+    overflow-y: auto;
+}
+#url,#addfile
+{
+    cursor: pointer;
+}
+
+#url:hover
+{
+    border-bottom: 3px solid #2196F3;
+}
+
+#addfile:hover
+{
+    border-bottom: 3px solid #2196F3;
+}
+.page-header-light
+{
+    height: 40px;
+}
+
+.mmy_btn:hover
+{
+    background-color: #2664ae;
+    color: white;
+}
+
+/*.tbl_index tbody tr:hover {*/
+/*    border-radius: 10px;*/
+/*    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);*/
+/*}*/
+/*.tbl_index{*/
+/*    margin-bottom: 10px;*/
+/*}*/
+/*.table-responsive*/
+/*{*/
+/*    padding:10px;*/
+/*}*/
+
+@font-face {
+    font-family: myFirstFont;
+    src: url('../prox.otf');
+}
+
+* {
+    font-family: myFirstFont;
+    font-weight:bolder;
+
+}
+
+.bg-grey,btn-default
+{
+    background-color:white;
+    color:grey;
+    border:1px solid grey;
+}
+
+.mmy_btn
+{
+    font-weight: bold;
+}
+
+.b_b
+{
+    border-bottom:3px solid #03a9f4;
+}
+.my_h
+{
+    color:gray;
+    text-transform: uppercase;
+}
+.chat_icon
+{
+    max-height:40px;
+}
+.chat_icon:hover
+{
+
+    cursor: pointer;
+}
+.nav-item a{
+    font-size: 15px;
+}
+
+/*.DataTables_Table_0_wrapper,.datatable-scroll,.custom-data-tables{*/
+/*    width: 100% !important;*/
+/*}*/
+/*.table-bordered, .table-bordered > th, .table-bordered > td {*/
+/*    border: 1px solid #ddd!important;*/
+/*}*/
+.custom-data-tables > th {
+    white-space: nowrap!important;
+}
+
+.custom-data-tables > td{
+    font-size: .8375rem!important;
+}
+
+.table thead tr th{
+    font-size: 14px!important;
+}
+.table tbody tr td, .table tbody tr td h6,.table tbody tr td, .table tbody tr td{
+    font-size: 13px!important;
+    font-weight: 100!important;
+    font-family: 'Montserrat', sans-serif !important;
+}
+table.dataTable thead th{
+    border-bottom-color: #ddd!important;
+}
+table.dataTable tfoot th, table.dataTable,
+.dataTables_wrapper.no-footer .dataTables_scrollBody{
+    border-bottom-color: #ddd!important;
+}
+.table-responsive{
+    padding-bottom: 10px!important;
+}
+.custom-data-tables tbody tr:hover{
+    cursor: pointer;
+    background: rgba(173, 216, 230,0.4) !important;
+}
+.page-content{
+    margin-top: 25px!important;
+}
+.navbar-brand{
+    min-height: 80px;
+}
+.navbar{
+    min-height: 80px !important;
+}
+
+.sidebar{
+    margin-top: -115px!important;
+}
+
+.nav-sidebar{
+    padding-top: 4px!important;
+}
+
+.row:before, .row:after {display: none !important;}
+
+[class*="col-"] {
+    flex: unset!important;
+}
+
+.sidebar-dark{
+    background:url("../../img/banner-bg.png")!important;
+}
+
+i :not(.fa,.icon*){
+    font-family: 'Montserrat', sans-serif !important;
+}
+p,h1,h2,h3,h4,h5,h6,a,button,input,textarea,label,span,.media-title{
+    font-family: 'Montserrat', sans-serif !important;
+}
+.h4{
+    font-size: unset!important;
+}
+.nav-item a {
+    font-size: 14px!important;
+}
+.offer-interest-rate-rounded-container {
+    color: #222;
+    background: #fff;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 7px solid #4975E3;
+    text-align: center;
+    padding-top: 30px;
+}
+.i-initial {
+    color: #4975E3;
+    background: #fff;
+    padding: 5px 20px;
+    border-radius: 50%;
+    font-size: 30px;
+}
+.i-initial-inverse {
+    background: #4975E3;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 50%;
+    font-size: 30px;
+}
+.i-initial-inverse-big {
+    background: #4975E3;
+    color: #fff;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 50%;
+    font-size: 30px;
+}
+.swal-overlay{
+    z-index: 10200!important;
+}
+.transparent-card{
+    background: transparent!important;border-color:transparent!important;
+    box-shadow: unset!important;
+}
+.content-wrapper{
+    margin-top: -25px!important;
+}

@@ -1,0 +1,165 @@
+.main-timer-container .time {
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    height: 40px;
+    width: 40px;
+
+    -webkit-perspective: 479px;
+    -moz-perspective: 479px;
+    -ms-perspective: 479px;
+    -o-perspective: 479px;
+    perspective: 479px;
+
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.main-timer-container .count {
+    background: #4975E3;
+    color: #f8f8f8;
+    display: block;
+    font-family: 'Oswald', sans-serif!important;
+    font-size: 1.5em;
+    line-height: 1.8em;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+
+    -webkit-transform-style: flat;
+    -moz-transform-style: flat;
+    -ms-transform-style: flat;
+    -o-transform-style: flat;
+    transform-style: flat;
+}
+.main-timer-container .count.top {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-radius: 5px 5px 0 0;
+    height: 50%;
+
+    -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+.main-timer-container .count.bottom {
+    background-image: linear-gradient(rgba(255,255,255,0.1), transparent);
+    background-image: -webkit-linear-gradient(rgba(255,255,255,0.1), transparent);
+    background-image: -moz-linear-gradient(rgba(255,255,255,0.1), transparent);
+    background-image: -ms-linear-gradient(rgba(255,255,255,0.1), transparent);
+    background-image: -o-linear-gradient(rgba(255,255,255,0.1), transparent);
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-radius: 0 0 5px 5px;
+    line-height: 0;
+    height: 50%;
+    top: 50%;
+
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    -o-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+.main-timer-container .count.next {
+}
+.main-timer-container .label {
+    margin-top: 5px;
+    display: block;
+    position: absolute;
+    top: 35px;
+    width: 100%;
+}
+/* Animation start */
+.main-timer-container .count.curr.top {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    z-index: 3;
+}
+.main-timer-container .count.next.bottom {
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    z-index: 2;
+}
+/* Animation end */
+.main-timer-container .flip .count.curr.top {
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -ms-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+    -o-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+.main-timer-container .flip .count.next.bottom {
+    -webkit-transition: all 250ms ease-in-out 250ms;
+    -moz-transition: all 250ms ease-in-out 250ms;
+    -ms-transition: all 250ms ease-in-out 250ms;
+    -o-transition: all 250ms ease-in-out 250ms;
+    transition: all 250ms ease-in-out 250ms;
+
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+@media screen and (max-width: 48em) {
+    .main-timer-container {
+        width: 100%;
+    }
+
+    .main-timer-container .countdown-container {
+        height: 100px;
+    }
+
+    .main-timer-container .time {
+        height: 70px;
+        width: 48px;
+    }
+
+    .main-timer-container .count {
+        font-size: 1.5em;
+        line-height: 70px;
+    }
+
+    .main-timer-container .label {
+        font-size: 0.8em;
+        top: 72px;
+    }
+}

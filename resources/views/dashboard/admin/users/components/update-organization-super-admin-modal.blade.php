@@ -1,0 +1,29 @@
+<div id="updateSuperAdmin{{ $organization_id }}" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <form action="{{ route('organization.assign-super-admin',$organization_id) }}" class="admin-user-limit-form" method="post">
+                {{ csrf_field() }}
+                <div class="modal-header">
+                    <h4 class="modal-title">Update super admin user from <strong style="font-weight: bolder">{{ $current_admin->name }}</strong></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="form-group col-12">
+                            <label>Select Users</label>
+                            <select name="new_admin_id" class="form-control">
+                                @foreach($users as $user)
+                                <option value="{{ $user->id }}">{{ $user->name }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn custom-primary round">Update</button>
+                    <button type="button" class="btn custom-secondary round" data-dismiss="modal">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+config.php
+routes.php
+schedule-*
+compiled.php
+services.json
+events.scanned.php
+routes.scanned.php
+down
+
+views/*
+sessions/*
+
+# exception to the rule
+!views/.gitkeep
+!sessions/.gitkeep
+!.gitignore

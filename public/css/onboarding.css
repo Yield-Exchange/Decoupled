@@ -1,0 +1,159 @@
+.form-check-label{
+    font-size: 14px;
+}
+
+.form-check-label > .form-input-styled{
+    margin-right: 5px;
+}
+
+.form-text{
+    font-size: 14px;
+}
+
+.forgot-pass{
+    font-size: 14px;
+}
+@media screen and (max-width: 578px) {
+    #login_img{
+        display: none;
+    }
+}
+#banner{
+    padding-top: 80px!important;
+}
+.btn.btn-link{
+    color: #007bff;
+}
+.btn.btn-link.active{
+    color: black;
+}
+.nav-tabs > .nav-item > .nav-link.active{
+    background: rgba(81, 124, 231, 0.2);
+}
+.alert{
+    /*display: none;*/
+}
+#banner{
+    height: 742px;
+    padding-top: 70px!important;
+    padding-bottom: 20px!important;
+    overflow: visible!important;
+}
+.card-shadow{
+    border:none;
+    border-radius: 5px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0,0.1);
+    /*    box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];*/
+}
+.card-center{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#banner .container{
+    /* background: #fcfbfc; */
+    padding-right: 0;
+    padding-left: 0;
+}
+#banner .container #row #card{
+    position: relative;
+    margin-top:20px;
+    clear: both;
+}
+#banner .container #row{
+    min-height: 800px!important;
+    margin-bottom: 50px;
+}
+footer,#cpryt{
+    display: none;
+}
+.card-body h3{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0;
+    font-family: 'Montserrat';
+}
+.card-body p{
+    font-size: 15px;
+    font-family: 'Montserrat';
+    font-weight: lighter;
+    color: #777777;
+}
+.col-padding-remover{
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+.card-spacer{
+    width: 100%;
+    height: 20px;
+}
+.card-title{
+    font-weight:bolder;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Montserrat';
+}
+.card-title span{
+    font-weight: normal;
+    color: #777777;
+}
+.card-img-top{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+    width: 100%;
+}
+.card-people{
+    /*width: 30%;*/
+    display: inline-block;
+    padding:0;
+}
+.card-people:first-child{
+    margin-right: 4.5%;
+}
+.card-people:last-child {
+    margin-left: 4.5%;
+}
+
+@media only screen and (max-width: 600px) {
+    #row{
+        width: 100%!important;
+        /*margin-left: -3.8%!important;*/
+    }
+    .card,.col{
+        width: 100%!important;
+        flex-basis: unset;
+    }
+    .card-people{
+        margin-bottom: 20px;
+    }
+    .card-people:last-child{
+        margin-left: 0;
+    }
+    .card-people:first-child{
+        margin-right: 0;
+    }
+}
+.SignInContainer{
+    margin: 0 auto;
+    padding-top: 40px;
+    text-align: center;
+}
+.SignInContainer > h2{
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.SignInUserType-t-buttons{
+    border:1px solid #7099FA;
+    cursor:pointer;
+    font-size: 13px;
+}
+
+.SignInUserType-t-buttons:hover {
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    transform: scale(1.02);
+}

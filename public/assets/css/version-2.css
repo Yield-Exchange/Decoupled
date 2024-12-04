@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*:not(i){
+    font-family: 'Montserrat', sans-serif!important;
+}
+
+.sidebar-dark{
+    width: 296px;
+    background-color: #5063F4;
+    background-image: url('/assets/dashboard/images/vector.svg');
+    background-size: 250px auto;
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+}
+
+.sidebar-user{
+    margin-top: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.sidebar-user > a > img{
+    width: 228px;
+    height: 28px;
+}
+
+.content-wrapper{
+ overflow-y: hidden;
+}
+
+.content{
+    /*overflow-x: visible;*/
+    /*min-height: 100vh - 65vh;*/
+}
+
+.sidebar-dark  .nav-link.active{
+    background-color: none!important;
+    background: url('/assets/dashboard/images/nav_active_bar.svg') no-repeat!important;
+}
+
+.sidebar-dark .nav-item .nav-link{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.sidebar-dark .nav-item .nav-link img{
+    margin-right: 10px;
+}
+
+.sidebar-dark .nav-item .nav-link span{
+    padding-top: 5px;
+}
+
+.beta-menu-wrapper{
+    margin-top: 5px;
+    border: 1px solid white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    margin-left: 10px;
+}
+
+.nav-bottom{
+    /*position: absolute;*/
+    bottom: 0;
+}
+
+.switch_timezone, .switch_timezone:focus{
+    color: #5063F4!important;
+}
+
+.i-initial-inverse span {
+    font-size: 26px!important;
+}
+
+.navbar-nav-link:hover,.navbar-nav-link:focus {
+    background: none !important;
+}
+
+.navbar {
+    padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x)!important;
+}
+
+.nav-sidebar .nav-treeview {
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+
+.nav.nav-treeview{
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.nav.nav-treeview .nav-item{
+    padding: 0;
+    margin: 0;
+}
+
+.nav.nav-treeview .nav-item .nav-link{
+    padding-top: 0;
+    padding-left: 60px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.nav.nav-treeview .nav-item .nav-link:hover, .nav.nav-treeview .nav-item .nav-link:focus{
+    background: none;
+    cursor: pointer;
+}
+
+.krishna  a{
+    font-size: 15px;
+}
+
+.menu-is-open .nav-treeview{
+    display: block;
+}
+
+.nav.nav-treeview .nav-item .nav-link .sub-active{
+    border-bottom: 1px #44E0AA solid
+}
+
+.table-active{
+    --bs-table-bg-state: none!important;
+}
+
+.table-responsive {
+    border-radius: 20px;
+}

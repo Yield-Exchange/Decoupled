@@ -1,0 +1,210 @@
+<template>
+    <div style="height: 100%">
+        <div
+            style="width: 100%;  padding-top: 10px; padding-bottom: 10px; background: #EFF2FE; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 30px; display: inline-flex">
+            <div style="justify-content: center; align-items: flex-start; display: inline-flex">
+                <div style="display: flex; flex-direction: column;">
+                    <div
+                        style="width: 100%; align-self: stretch; justify-content: flex-start; align-items: center; gap: 10px; display: flex">
+                        <div style="width: 40px; height: 40px; position: relative">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                fill="none">
+                                <path
+                                    d="M5.58813 14.9174C6.67396 10.2883 10.2883 6.67395 14.9174 5.58813C18.2604 4.80396 21.7396 4.80396 25.0826 5.58813C29.7117 6.67395 33.3261 10.2884 34.4119 14.9174C35.196 18.2604 35.196 21.7396 34.4119 25.0826C33.3261 29.7117 29.7117 33.3261 25.0826 34.4119C21.7396 35.1961 18.2604 35.1961 14.9174 34.4119C10.2884 33.3261 6.67396 29.7117 5.58813 25.0826C4.80396 21.7396 4.80396 18.2604 5.58813 14.9174Z"
+                                    fill="#EFF2FE" stroke="#5063F4" stroke-width="1.35" />
+                                <path
+                                    d="M23.6 29C22.355 29 21.2936 28.5588 20.4158 27.6763C19.538 26.7939 19.0994 25.7272 19.1 24.4762C19.1 23.2246 19.5389 22.1576 20.4167 21.2751C21.2945 20.3927 22.3556 19.9518 23.6 19.9524C24.845 19.9524 25.9064 20.3936 26.7842 21.276C27.662 22.1585 28.1006 23.2252 28.1 24.4762C28.1 25.7278 27.6611 26.7948 26.7833 27.6772C25.9055 28.5597 24.8444 29.0006 23.6 29ZM25.1075 26.625L25.7375 25.9917L24.05 24.2952V21.7619H23.15V24.6571L25.1075 26.625ZM12.8 28.0952C12.305 28.0952 11.8811 27.9179 11.5283 27.5632C11.1755 27.2086 10.9994 26.7827 11 26.2857V13.619C11 13.1214 11.1764 12.6953 11.5292 12.3406C11.882 11.986 12.3056 11.8089 12.8 11.8095H16.5575C16.7225 11.2817 17.045 10.8481 17.525 10.5085C18.005 10.1689 18.53 9.9994 19.1 10C19.7 10 20.2364 10.1698 20.7092 10.5094C21.182 10.849 21.5006 11.2824 21.665 11.8095H25.4C25.895 11.8095 26.3189 11.9869 26.6717 12.3415C27.0245 12.6962 27.2006 13.122 27.2 13.619V19.2738C26.93 19.0778 26.645 18.9119 26.345 18.7762C26.045 18.6405 25.73 18.5198 25.4 18.4143V13.619H23.6V16.3333H14.6V13.619H12.8V26.2857H17.57C17.675 26.6175 17.795 26.9341 17.93 27.2357C18.065 27.5373 18.23 27.8238 18.425 28.0952H12.8ZM19.1 13.619C19.355 13.619 19.5689 13.5322 19.7417 13.3585C19.9145 13.1848 20.0006 12.97 20 12.7143C20 12.4579 19.9136 12.2429 19.7408 12.0692C19.568 11.8955 19.3544 11.8089 19.1 11.8095C18.845 11.8095 18.6311 11.8964 18.4583 12.0701C18.2855 12.2438 18.1994 12.4585 18.2 12.7143C18.2 12.9706 18.2864 13.1857 18.4592 13.3594C18.632 13.5331 18.8456 13.6197 19.1 13.619Z"
+                                    fill="#5063F4" />
+                            </svg>
+                        </div>
+                        <div
+                            style="color: #252525; font-size: 30px;  font-weight: 800; line-height: 32px; word-wrap: break-word">
+                            Active Trades
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ml-10 mt-3" style="width:100%;display: flex; flex-direction:row; justify-content:flex-end;">
+            <FilterBox :filtered="filtered" @apply_filters="submitFilters" @clear_filters="clearFilters"
+                filterType="bank" :dontshow="['tradedate']" :products="products" @searching="search"
+                from="reviewoffers">
+            </FilterBox>
+        </div>
+        <div class="mt-3">
+            <Table :columns="columns" no-data-title="No Active Offers" no-data-message="No offers available"
+                :data="table_data" :has_action='true' :actions='actions' :selectable="false" :is_loading="is_loading" />
+        </div>
+        <div class="mt-3">
+            <Pagination @click-next-page="getPageData" v-if="data && data.links" :data="data" />
+        </div>
+
+    </div>
+</template>
+
+<script>
+import Table from "../../../shared/PostOffersTable";
+import Pagination from "../../../shared/Table/Pagination";
+import FilterBox from "../../shared/filters/FilterBox";
+import CustomInput from "../../../shared/CustomInput";
+
+import { userCan } from "../../../../utils/GlobalUtils";
+// import { formatTimestamp } from "../../../../utils/dateUtils";
+import ViewOffer from "./actions/ViewOffer"
+import WithdrawRequest from "./actions/WithdrawRequest"
+import EditRequest from "./actions/EditRequest"
+import RequestSummary from "./actions/ViewRequestSummary"
+import StartChat from './actions/StartChat.vue'
+import { addDaysToDate, addCommasToANumber, formatTimestamp, formatNumberAbbreviated, sentenceCase, addCommasAndDecToANumber, repoProductName, getBasketDetails, addDaysOrMonthsToDate } from "../../../../utils/commonUtils";
+import { mapGetters } from 'vuex';
+import * as types from '../../../../store/modules/postreq/mutation-types.js';
+import ShowCG from "../../shared/ShowCG.vue";
+export default {
+    mounted() {
+        this.getData();
+    },
+    computed: {
+
+    },
+    components: {
+        EditRequest,
+        RequestSummary,
+        WithdrawRequest,
+        ViewOffer,
+        Table,
+        Pagination,
+        FilterBox,
+        StartChat,
+        ShowCG
+    },
+    created() {
+    },
+    props: ['offers', 'products', 'titlespan'],
+    data() {
+        let columnss = ['Trade ID', 'Collateral Taker', 'Repo Name', 'Collateral', 'Term Length', 'Investment', 'Rate', 'Maturity  Date', 'Chat', 'Action'];
+        let act = [
+            {
+                name: "View Offers",
+                component: ViewOffer
+            },
+            // {
+            //     name: "Withdraw Request",
+            //     component: WithdrawRequest
+            // },
+            // {
+            //     name: "Edit Request",
+            //     component: EditRequest
+            // }
+        ];
+        return {
+            details: null,
+            existing: null,
+            actions: act,
+            columns: columnss,
+            is_modal: false,
+            table_data: [],
+            links: [],
+            data: [],
+            term_length_filter: null,
+            product_type_filter: null,
+            filtered: [],
+            is_loading: false,
+            productFilter: '',
+            filterString: ''
+        }
+    },
+    watch: {
+
+    },
+    methods: {
+        clearFilters() {
+            this.getData()
+        },
+        search(value) {
+            let url = '';
+            if (this.filterString !== '') {
+                url = `/trade/CG/get-deposits?type=active&search=${value}`;
+            } else {
+                url = `/trade/CG/get-deposits?type=active&search=${value}`
+            }
+            this.getData(url);
+        },
+        submitFilters(value) {
+            this.filterString = value;
+            // console.log(value, "all filters data");
+            let url = `/trade/CG/get-deposits?type=active&${value}`;
+            this.getData(url);
+        },
+        capitalize(thestring) {
+            if (thestring != undefined) {
+                return thestring
+                    .toLowerCase()
+                    .split(' ')
+                    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+                    .join(' ');
+            }
+
+        },
+        formatLabel(str) {
+            str = str.replace(/\?/g, '');
+            return str;
+        },
+        getPageData(url) {
+            if (this.filterString != '') {
+                this.formatLabel(this.filterString);
+                url = `${url}&${this.filterString}&type=active&`
+            } else {
+                url = `${url}&type=active&`
+            }
+            this.getData(url);
+        },
+
+        getData(url) {
+            this.is_loading = true;
+            let this_ = this;
+            url = url ? url : "/trade/CG/get-deposits?type=active";
+            axios.get(url)
+                .then(response => {
+                    let table_data = [];
+                    this_.data = response?.data;
+                    Object.values(response?.data.data).forEach((item) => {
+                        let basketType = item?.c_g_offer.basket != null ? getBasketDetails(item?.c_g_offer?.basket) : getBasketDetails(item?.c_g_offer?.bi_colleteral, false)
+
+                        console.log(item)
+                        table_data.push([
+                            item?.encoded_id,
+                            item?.deposit_reference_no,
+                            () => {
+                                return ({ 'component': ShowCG, 'attrs': { orgname: item?.c_t_organization?.name, organization: item?.c_t_organization } });
+                            },
+                            repoProductName(item?.c_g_offer?.offer_term_length, item?.c_g_offer?.offer_term_length_type, item?.c_g_offer?.product?.product_name),
+                            basketType.name,
+                            item?.c_g_offer?.offer_term_length + " " + this.capitalize(item?.c_g_offer?.offer_term_length_type),
+                            item?.c_g_offer?.c_t_trade_request?.currency + ' ' + addCommasToANumber(item?.offered_amount) + ` (${formatNumberAbbreviated(item?.offered_amount)})`,
+                            item?.c_g_offer?.offer_interest_rate ? item?.c_g_offer.offer_interest_rate.toFixed(2) + " %" : '-',
+                            // item?.trade_date ? addDaysOrMonthsToDate(item?.trade_date, item.c_g_offer?.offer_term_length, item.c_g_offer?.offer_term_length_type, true) : '-',
+                            item?.maturity_date ? formatTimestamp(item?.maturity_date, false) : '-',
+                            () => {
+                                return ({
+                                    'component': StartChat, 'attrs': {
+                                        reference: item.deposit_reference_no, deposit_id: item.encoded_id, recipient: item?.c_t_organization
+                                    }
+                                });
+                            },
+                        ]);
+                    });
+                    this.is_loading = false;
+                    this_.table_data = table_data;
+                    // console.log(this.table_data, 'Table Data')
+                }).catch(error => {
+                    this.is_loading = false;
+                    // console.log("error > ", error);
+                });
+
+        },
+        userCan(user, permission) {
+            return userCan(user, permission);
+        },
+    }
+}
+</script>

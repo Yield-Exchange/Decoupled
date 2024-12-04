@@ -1,0 +1,324 @@
+﻿Code,Class title
+1111,Oilseed and grain farming
+1112,Vegetable and melon farming
+1113,Fruit and tree nut farming
+1114,"Greenhouse, nursery and floriculture production"
+1119,Other crop farming
+1121,Cattle ranching and farming
+1122,Hog and pig farming
+1123,Poultry and egg production
+1124,Sheep and goat farming
+1125,Aquaculture
+1129,Other animal production
+1131,Timber tract operations
+1132,Forest nurseries and gathering of forest products
+1133,Logging
+1141,Fishing
+1142,Hunting and trapping
+1151,Support activities for crop production
+1152,Support activities for animal production
+1153,Support activities for forestry
+2111,Oil and gas extraction
+2121,Coal mining
+2122,Metal ore mining
+2123,Non-metallic mineral mining and quarrying
+2131,"Support activities for mining, and oil and gas extraction"
+2211,"Electric power generation, transmission and distribution"
+2212,Natural gas distribution
+2213,"Water, sewage and other systems"
+2361,Residential building construction
+2362,Non-residential building construction
+2371,Utility system construction
+2372,Land subdivision
+2373,"Highway, street and bridge construction"
+2379,Other heavy and civil engineering construction
+2381,"Foundation, structure, and building exterior contractors"
+2382,Building equipment contractors
+2383,Building finishing contractors
+2389,Other specialty trade contractors
+3111,Animal food manufacturing
+3112,Grain and oilseed milling
+3113,Sugar and confectionery product manufacturing
+3114,Fruit and vegetable preserving and specialty food manufacturing
+3115,Dairy product manufacturing
+3116,Meat product manufacturing
+3117,Seafood product preparation and packaging
+3118,Bakeries and tortilla manufacturing
+3119,Other food manufacturing
+3121,Beverage manufacturing
+3122,Tobacco manufacturing
+3123,Cannabis product manufacturing
+3131,"Fibre, yarn and thread mills"
+3132,Fabric mills
+3133,Textile and fabric finishing and fabric coating
+3141,Textile furnishings mills
+3149,Other textile product mills
+3151,Clothing knitting mills
+3152,Cut and sew clothing manufacturing
+3159,Clothing accessories and other clothing manufacturing
+3161,Leather and hide tanning and finishing
+3162,Footwear manufacturing
+3169,Other leather and allied product manufacturing
+3211,Sawmills and wood preservation
+3212,"Veneer, plywood and engineered wood product manufacturing"
+3219,Other wood product manufacturing
+3221,"Pulp, paper and paperboard mills"
+3222,Converted paper product manufacturing
+3231,Printing and related support activities
+3241,Petroleum and coal product manufacturing
+3251,Basic chemical manufacturing
+3252,"Resin, synthetic rubber, and artificial and synthetic fibres and filaments manufacturing"
+3253,"Pesticide, fertilizer and other agricultural chemical manufacturing"
+3254,Pharmaceutical and medicine manufacturing
+3255,"Paint, coating and adhesive manufacturing"
+3256,"Soap, cleaning compound and toilet preparation manufacturing"
+3259,Other chemical product manufacturing
+3261,Plastic product manufacturing
+3262,Rubber product manufacturing
+3271,Clay product and refractory manufacturing
+3272,Glass and glass product manufacturing
+3273,Cement and concrete product manufacturing
+3274,Lime and gypsum product manufacturing
+3279,Other non-metallic mineral product manufacturing
+3311,Iron and steel mills and ferro-alloy manufacturing
+3312,Steel product manufacturing from purchased steel
+3313,Alumina and aluminum production and processing
+3314,Non-ferrous metal (except aluminum) production and processing
+3315,Foundries
+3321,Forging and stamping
+3322,Cutlery and hand tool manufacturing
+3323,Architectural and structural metals manufacturing
+3324,"Boiler, tank and shipping container manufacturing"
+3325,Hardware manufacturing
+3326,Spring and wire product manufacturing
+3327,"Machine shops, turned product, and screw, nut and bolt manufacturing"
+3328,"Coating, engraving, cold and heat treating and allied activities"
+3329,Other fabricated metal product manufacturing
+3331,"Agricultural, construction and mining machinery manufacturing"
+3332,Industrial machinery manufacturing
+3333,Commercial and service industry machinery manufacturing
+3334,"Ventilation, heating, air-conditioning and commercial refrigeration equipment manufacturing"
+3335,Metalworking machinery manufacturing
+3336,"Engine, turbine and power transmission equipment manufacturing"
+3339,Other general-purpose machinery manufacturing
+3341,Computer and peripheral equipment manufacturing
+3342,Communications equipment manufacturing
+3343,Audio and video equipment manufacturing
+3344,Semiconductor and other electronic component manufacturing
+3345,"Navigational, measuring, medical and control instruments manufacturing"
+3346,Manufacturing and reproducing magnetic and optical media
+3351,Electric lighting equipment manufacturing
+3352,Household appliance manufacturing
+3353,Electrical equipment manufacturing
+3359,Other electrical equipment and component manufacturing
+3361,Motor vehicle manufacturing
+3362,Motor vehicle body and trailer manufacturing
+3363,Motor vehicle parts manufacturing
+3364,Aerospace product and parts manufacturing
+3365,Railroad rolling stock manufacturing
+3366,Ship and boat building
+3369,Other transportation equipment manufacturing
+3371,Household and institutional furniture and kitchen cabinet manufacturing
+3372,Office furniture (including fixtures) manufacturing
+3379,Other furniture-related product manufacturing
+3391,Medical equipment and supplies manufacturing
+3399,Other miscellaneous manufacturing
+4111,Farm product merchant wholesalers
+4121,"Petroleum, petroleum products, and other hydrocarbons merchant wholesalers"
+4131,Food merchant wholesalers
+4132,Beverage merchant wholesalers
+4133,Cigarette and tobacco product merchant wholesalers
+4134,Cannabis merchant wholesalers
+4141,"Textile, clothing and footwear merchant wholesalers"
+4142,Home entertainment equipment and household appliance merchant wholesalers
+4143,Home furnishings merchant wholesalers
+4144,Personal goods merchant wholesalers
+4145,"Pharmaceuticals, toiletries, cosmetics and sundries merchant wholesalers"
+4151,Motor vehicle merchant wholesalers
+4152,New motor vehicle parts and accessories merchant wholesalers
+4153,Used motor vehicle parts and accessories merchant wholesalers
+4161,"Electrical, plumbing, heating and air-conditioning equipment and supplies merchant wholesalers"
+4162,Metal service centres
+4163,"Lumber, millwork, hardware and other building supplies merchant wholesalers"
+4171,"Farm, lawn and garden machinery and equipment merchant wholesalers"
+4172,"Construction, forestry, mining, and industrial machinery, equipment and supplies merchant wholesalers"
+4173,Computer and communications equipment and supplies merchant wholesalers
+4179,"Other machinery, equipment and supplies merchant wholesalers"
+4181,Recyclable material merchant wholesalers
+4182,"Paper, paper product and disposable plastic product merchant wholesalers"
+4183,Agricultural supplies merchant wholesalers
+4184,Chemical (except agricultural) and allied product merchant wholesalers
+4185,"Mineral, ore and precious metal merchant wholesalers"
+4186,"Log, wood chips, and other wood products merchant wholesalers"
+4189,Other miscellaneous merchant wholesalers
+4191,"Business-to-business electronic markets, and agents and brokers"
+4411,Automobile dealers
+4412,Other motor vehicle dealers
+4413,"Automotive parts, accessories and tire retailers"
+4441,Building material and supplies dealers
+4442,Lawn and garden equipment and supplies retailers
+4451,Grocery and convenience retailers
+4452,Specialty food retailers
+4453,"Beer, wine and liquor retailers"
+4491,"Furniture, floor covering, window treatment and other home furnishings retailers"
+4492,Electronics and appliances retailers
+4551,Department stores
+4552,"Warehouse clubs, Supercentres and other general merchandise retailers"
+4561,Health and personal care retailers
+4571,Gasoline stations
+4572,Fuel dealers
+4581,Clothing and clothing accessories retailers
+4582,Shoe retailers
+4583,"Jewellery, luggage and leather goods retailers"
+4591,"Sporting goods, hobby and musical instrument retailers"
+4592,Book retailers and news dealers
+4593,Florists
+4594,"Office supplies, stationery and gift retailers"
+4595,Used merchandise retailers
+4599,Other miscellaneous store retailers
+4811,Scheduled air transportation
+4812,Non-scheduled air transportation
+4821,Rail transportation
+4831,"Deep sea, coastal and Great Lakes water transportation"
+4832,Inland water transportation
+4841,General freight trucking
+4842,Specialized freight trucking
+4851,Urban transit systems
+4852,Interurban and rural bus transportation
+4853,Taxi and limousine service
+4854,School and employee bus transportation
+4855,Charter bus industry
+4859,Other transit and ground passenger transportation
+4861,Pipeline transportation of crude oil
+4862,Pipeline transportation of natural gas
+4869,Other pipeline transportation
+4871,"Scenic and sightseeing transportation, land"
+4872,"Scenic and sightseeing transportation, water"
+4879,"Scenic and sightseeing transportation, other"
+4881,Support activities for air transportation
+4882,Support activities for rail transportation
+4883,Support activities for water transportation
+4884,Support activities for road transportation
+4885,Freight transportation arrangement
+4889,Other support activities for transportation
+4911,Postal service
+4921,Couriers
+4922,Local messengers and local delivery
+4931,Warehousing and storage
+5121,Motion picture and video industries
+5122,Sound recording industries
+5131,"Newspaper, periodical, book and directory publishers"
+5132,Software publishers
+5161,Radio and television broadcasting stations
+5162,"Media streaming distribution services, and other media networks and content providers"
+5173,Wired and wireless telecommunications carriers(except satellite)
+5174,Satellite telecommunications
+5179,Other telecommunications
+5182,"Computing infrastructure providers, data processing, web hosting, and related services"
+5192,"Web search portals, libraries and archives, and all other information services"
+5211,Monetary authorities - central bank
+5221,Depository credit intermediation
+5222,Non-depository credit intermediation
+5223,Activities related to credit intermediation
+5231,Securities and commodity contracts intermediation and brokerage
+5232,Securities and commodity exchanges
+5239,Other financial investment activities
+5241,Insurance carriers
+5242,"Agencies, brokerages and other insurance related activities"
+5261,Pension funds
+5269,Other funds and financial vehicles
+5311,Lessors of real estate
+5312,Offices of real estate agents and brokers
+5313,Activities related to real estate
+5321,Automotive equipment rental and leasing
+5322,Consumer goods rental
+5323,General rental centres
+5324,Commercial and industrial machinery and equipment rental and leasing
+5331,Lessors of non-financial intangible assets (except copyrighted works)
+5411,Legal services
+5412,"Accounting, tax preparation, bookkeeping and payroll services"
+5413,"Architectural, engineering and related services"
+5414,Specialized design services
+5415,Computer systems design and related services
+5416,"Management, scientific and technical consulting services"
+5417,Scientific research and development services
+5418,"Advertising, public relations, and related services"
+5419,"Other professional, scientific and technical services"
+5511,Management of companies and enterprises
+5611,Office administrative services
+5612,Facilities support services
+5613,Employment services
+5614,Business support services
+5615,Travel arrangement and reservation services
+5616,Investigation and security services
+5617,Services to buildings and dwellings
+5619,Other support services
+5621,Waste collection
+5622,Waste treatment and disposal
+5629,Remediation and other waste management services
+6111,Elementary and secondary schools
+6112,Community colleges and C.E.G.E.P.s
+6113,Universities
+6114,Business schools and computer and management training
+6115,Technical and trade schools
+6116,Other schools and instruction
+6117,Educational support services
+6211,Offices of physicians
+6212,Offices of dentists
+6213,Offices of other health practitioners
+6214,Out-patient care centres
+6215,Medical and diagnostic laboratories
+6216,Home health care services
+6219,Other ambulatory health care services
+6221,General medical and surgical hospitals
+6222,Psychiatric and substance use hospitals
+6223,Specialty hospitals (except psychiatric and substance use)
+6231,Nursing care facilities
+6232,"Residential facilities for persons with an intellectual or developmental disability, a mental health or substance use condition"
+6233,Community care facilities for the elderly
+6239,Other residential care facilities
+6241,Individual and family services
+6242,"Community food and housing, and emergency and other relief services"
+6243,Vocational rehabilitation services
+6244,Child day-care services
+7111,Performing arts companies
+7112,Spectator sports
+7113,"Promoters (presenters) of performing arts, sports and similar events"
+7114,"Agents and managers for artists, athletes, entertainers and other public figures"
+7115,"Independent artists, writers and performers"
+7121,Heritage institutions
+7131,Amusement parks and arcades
+7132,Gambling industries
+7139,Other amusement and recreation industries
+7211,Traveller accommodation
+7212,Recreational vehicle (RV) parks and recreational camps
+7213,Rooming and boarding houses
+7223,Special food services
+7224,Drinking places (alcoholic beverages)
+7225,Full-service restaurants and limited-service eating places
+8111,Automotive repair and maintenance
+8112,Electronic and precision equipment repair and maintenance
+8113,Commercial and industrial machinery and equipment (except automotive and electronic) repair and maintenance
+8114,Personal and household goods repair and maintenance
+8121,Personal care services
+8122,Funeral services
+8123,Dry cleaning and laundry services
+8129,Other personal services
+8131,Religious organizations
+8132,Grant-making and giving services
+8133,Social advocacy organizations
+8134,Civic and social organizations
+8139,"Business, professional, labour and other membership organizations"
+8141,Private households
+9111,Defence services
+9112,Federal protective services
+9113,"Federal labour, employment and immigration services"
+9114,Foreign affairs and international assistance
+9119,Other federal government public administration
+9121,Provincial protective services
+9122,Provincial labour and employment services
+9129,Other provincial and territorial public administration
+9131,Municipal protective services
+9139,"Other local, municipal and regional public administration"
+9141,Indigenous public administration
+9191,International and other extra-territorial public administration

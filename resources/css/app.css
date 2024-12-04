@@ -1,0 +1,477 @@
+@import url("https://unpkg.com/vue-multiselect@2.1.6/dist/vue-multiselect.min.css");
+
+a {
+    text-decoration: none !important;
+}
+
+@media (min-width: 1200px) {
+
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1140px !important;
+    }
+}
+
+.dashboard-navbar {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+    min-height: 65px !important;
+}
+
+.dashboard-body {
+    margin: 0;
+    /* font-family: Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+    font-size: .8125rem;
+    font-weight: 400;
+    line-height: 1.5385;
+    color: #333;
+    text-align: left;
+    background-color: #F8FAFF;
+    ;
+}
+
+.dashboard-body .card {
+    border-radius: 20px;
+}
+
+.form-control,
+.vs__dropdown-toggle,
+.custom-file-input {
+    height: calc(1.5em + 0.75rem + 2px);
+    font-size: .8125rem !important;
+    font-weight: 400;
+    line-height: 1.5385;
+    color: #333;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ddd;
+    border-radius: 0.1875rem;
+    box-shadow: 0 0 0 0 transparent;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+/* 
+.badge {
+    display: inline-block;
+    padding: 0.3125rem 0.375rem;
+    font-size: 75%;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.125rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+} */
+
+.dashboard-body .card-body {
+    padding: 1.25rem;
+}
+
+.vs__selected,
+.form-file-text {
+    font-weight: normal !important;
+}
+
+.nav-item .nav-link span {
+    /* font-size: 14px!important; */
+}
+
+*:not(i, th, td) {
+    /*font-family: 'Montserrat', sans-serif !important;*/
+}
+
+.v-text-field input {
+    font-size: 13px !important;
+}
+
+.swal2-title {
+    font-size: 22px !important;
+}
+
+.swal2-html-container {
+    font-size: 15px !important;
+}
+
+.swal2-html-container {
+    font-size: 15px !important;
+}
+
+.swal2-cancel {
+    color: black !important;
+}
+
+.swal-button-actions {
+    flex-direction: row-reverse !important;
+    display: flex !important;
+}
+
+.dashboard-vue-container {
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.dashboard-vue-container .card-header {
+    padding-top: 0 !important;
+}
+
+.dashboard-vue-container .dashboard-body .card-body {
+    padding: 0;
+}
+
+.dashboard-vue-container .dashboard-body .card {
+    border-radius: 10px;
+}
+
+.dashboard-vue-container .btn.btn-secondary[disabled] {
+    background-color: #979797;
+    color: black;
+}
+
+#navbar-footer .navbar-text {
+    margin-left: 30px;
+}
+
+.table-active {
+    --bs-table-accent-bg: none !important;
+}
+
+.custom-switch .custom-control-label::after {
+    background-color: #3656A6 !important;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    background-color: #5063F4 !important;
+}
+
+.input-tel__label,
+.country-selector__label {
+    margin-top: 0 !important;
+}
+
+.country-selector__list {
+    height: 50px !important;
+    z-index: 9999 !important;
+}
+
+.custom-tab-nav-class>ul {
+    border: none;
+}
+
+.custom-tab-nav-class-border-bottom>ul {
+    border-bottom: 1px #D9D9D9 solid;
+}
+
+.custom-tab-nav-class15>ul {
+    margin-left: 15%;
+}
+
+.custom-tab-nav-class>ul li .nav-link {
+    background: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    border-color: transparent !important;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    word-wrap: break-word
+}
+
+.custom-tab-nav-class>ul li .nav-link.active {
+    color: #5063F4 !important;
+    border-color: #4200FF !important;
+}
+
+.flatpickr-input {
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    font-size: .8125rem !important;
+    box-shadow: 0 0 0 0 transparent;
+    padding: 0.375rem 0.75rem;
+    font-weight: normal;
+}
+
+.requred-field-star {
+    color: #5063F4;
+}
+
+.rounded-field {
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    /* padding: 8px; */
+    box-shadow: none;
+    margin-bottom: 10px;
+}
+
+.input-with-icon .form-control {
+    padding-right: 40px;
+    /* Adjust the value as needed to accommodate the icon */
+}
+
+.custom-select {
+    background-image: url('/assets/icons/down_arrow_icon.png');
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    padding: 10px 14px;
+}
+
+.custom-select-compined {
+    background-image: url('/assets/icons/down_arrow_icon.png');
+    background-repeat: no-repeat;
+    padding: 0px;
+}
+
+.header-font-weight {
+    font-weight: 700;
+    font-family: Montserrat !important;
+}
+
+.form-label {
+    /* font-style:bold;
+            font-weight: 550 !important;
+            font-size: 14px !important;;
+            line-height: 17.07px !important;
+            color: #252525;
+            font-family: Montserrat !important; */
+    font-family: Montserrat !important;
+    font-size: 14px;
+    font-weight: 450;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #252525;
+
+}
+
+.form-input-text {
+    font-family: Montserrat !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 17px !important;
+    letter-spacing: 0em;
+    text-align: left !important;
+
+}
+
+.page-title-parent-div {}
+
+.page-title {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 11px 11px;
+    height: auto;
+
+}
+
+.page-title>.text-div {
+    color: #252525;
+    font-family: Montserrat !important;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    /* 130% */
+    text-transform: capitalize;
+}
+
+.page-title>.title-icon {
+    width: 40px;
+    height: 40px;
+    position: relative
+}
+
+.nav-tabs .nav-link,
+.nav-tabs .nav-item.show .nav-link {
+    padding-left: 0px !important;
+    /* color: var(--bs-nav-tabs-link-active-color);
+    background-color: var(--bs-nav-tabs-link-active-bg);
+    border-color: var(--bs-nav-tabs-link-active-border-color); */
+}
+
+.clickable-icon:hover {
+    cursor: pointer;
+}
+
+.message-action-btn-solid- {
+    width: 140px !important;
+    height: 40px !important;
+    padding: 10px, 30px, 10px, 30px !important;
+    border-radius: 999px !important;
+    border: 2px !important;
+    background-color: #5063F4 !important;
+    color: white !important;
+    /* background-color: #5063F4  !important; */
+}
+
+:root {
+    --yield-exchange-palletteyield-exchange-blue: rgba(80, 99, 244, 1);
+    --yield-exchange-palletteyield-exchange-green: rgba(68, 224, 170, 1);
+    --yield-exchange-palletteyield-exchange-black: rgba(37, 37, 37, 1);
+    --yield-exchange-palletteyield-exchange-grey: rgba(156, 161, 170, 1);
+    --yield-exchange-palletteyield-exchange-light-grey: rgba(217, 217, 217, 1);
+    --yield-exchange-palletteyield-exchange-off-white: rgba(244, 245, 246, 1);
+    --yield-exchange-palletteyield-exchange-bgs: rgba(248, 250, 255, 1);
+    --yield-exchange-palletteyield-exchange-light-blue: rgba(239, 242, 254, 1);
+    --yield-exchange-palletteyield-exchange-white: rgba(255, 255, 255, 1);
+    --yield-exchange-palletteyield-exchange-error: rgba(255, 46, 46, 1);
+    --yield-exchange-palletteyield-exchange-light-red: rgba(255, 235, 235, 1);
+    --yield-exchange-palletteyield-exchange-approved: rgba(42, 153, 40, 1);
+    --yield-exchange-palletteyield-exchange-light-green: rgba(234, 245, 234, 1);
+    --yield-exchange-palletteyield-exchange-pending: rgba(244, 182, 60, 1);
+    --yield-exchange-palletteyield-exchange-light-orange: rgba(254, 248, 236, 1);
+    --yield-exchange-palletteyield-exchange-dark-purple: rgba(66, 0, 255, 1);
+    --yield-exchange-text-styles-landing-titles-font-family: "NeueMachina-Ultrabold", Helvetica;
+    --yield-exchange-text-styles-landing-titles-font-weight: 400;
+    --yield-exchange-text-styles-landing-titles-font-size: 40px;
+    --yield-exchange-text-styles-landing-titles-letter-spacing: 0px;
+    --yield-exchange-text-styles-landing-titles-line-height: 125.39999485015869%;
+    --yield-exchange-text-styles-landing-titles-font-style: normal;
+    --yield-exchange-text-styles-modal-status-font-family: "Montserrat-ExtraBold", Helvetica;
+    --yield-exchange-text-styles-modal-status-font-weight: 800;
+    --yield-exchange-text-styles-modal-status-font-size: 48px;
+    --yield-exchange-text-styles-modal-status-letter-spacing: 0px;
+    --yield-exchange-text-styles-modal-status-line-height: normal;
+    --yield-exchange-text-styles-modal-status-font-style: normal;
+    --yield-exchange-text-styles-modal-blue-BG-titles-font-family: "Montserrat-Bold", Helvetica;
+    --yield-exchange-text-styles-modal-blue-BG-titles-font-weight: 700;
+    --yield-exchange-text-styles-modal-blue-BG-titles-font-size: 28px;
+    --yield-exchange-text-styles-modal-blue-BG-titles-letter-spacing: 0px;
+    --yield-exchange-text-styles-modal-blue-BG-titles-line-height: 32px;
+    --yield-exchange-text-styles-modal-blue-BG-titles-font-style: normal;
+    --yield-exchange-text-styles-chart-titles-font-family: "Montserrat-Regular", Helvetica;
+    --yield-exchange-text-styles-chart-titles-font-weight: 400;
+    --yield-exchange-text-styles-chart-titles-font-size: 22px;
+    --yield-exchange-text-styles-chart-titles-letter-spacing: 0px;
+    --yield-exchange-text-styles-chart-titles-line-height: 26px;
+    --yield-exchange-text-styles-chart-titles-font-style: normal;
+    --yield-exchange-text-styles-drop-drown-inactive-titles-font-family: "Montserrat-Medium", Helvetica;
+    --yield-exchange-text-styles-drop-drown-inactive-titles-font-weight: 500;
+    --yield-exchange-text-styles-drop-drown-inactive-titles-font-size: 20px;
+    --yield-exchange-text-styles-drop-drown-inactive-titles-letter-spacing: 0px;
+    --yield-exchange-text-styles-drop-drown-inactive-titles-line-height: 26px;
+    --yield-exchange-text-styles-drop-drown-inactive-titles-font-style: normal;
+    --yield-exchange-text-styles-drop-down-active-tiltes-font-family: "Montserrat-Bold", Helvetica;
+    --yield-exchange-text-styles-drop-down-active-tiltes-font-weight: 700;
+    --yield-exchange-text-styles-drop-down-active-tiltes-font-size: 20px;
+    --yield-exchange-text-styles-drop-down-active-tiltes-letter-spacing: 0px;
+    --yield-exchange-text-styles-drop-down-active-tiltes-line-height: 26px;
+    --yield-exchange-text-styles-drop-down-active-tiltes-font-style: normal;
+    --yield-exchange-text-styles-table-titles-font-family: "Montserrat-SemiBold", Helvetica;
+    --yield-exchange-text-styles-table-titles-font-weight: 600;
+    --yield-exchange-text-styles-table-titles-font-size: 14px;
+    --yield-exchange-text-styles-table-titles-letter-spacing: 0px;
+    --yield-exchange-text-styles-table-titles-line-height: normal;
+    --yield-exchange-text-styles-table-titles-font-style: normal;
+    --yield-exchange-text-styles-table-body-font-family: "Montserrat-Regular", Helvetica;
+    --yield-exchange-text-styles-table-body-font-weight: 400;
+    --yield-exchange-text-styles-table-body-font-size: 14px;
+    --yield-exchange-text-styles-table-body-letter-spacing: 0px;
+    --yield-exchange-text-styles-table-body-line-height: normal;
+    --yield-exchange-text-styles-table-body-font-style: normal;
+    --yield-exchange-text-styles-promotion-chart-titles-font-family: "Montserrat-Bold", Helvetica;
+    --yield-exchange-text-styles-promotion-chart-titles-font-weight: 700;
+    --yield-exchange-text-styles-promotion-chart-titles-font-size: 16px;
+    --yield-exchange-text-styles-promotion-chart-titles-letter-spacing: 0px;
+    --yield-exchange-text-styles-promotion-chart-titles-line-height: 26px;
+    --yield-exchange-text-styles-promotion-chart-titles-font-style: normal;
+    --yield-exchange-text-styles-promotion-chart-body-font-family: "Montserrat-Regular", Helvetica;
+    --yield-exchange-text-styles-promotion-chart-body-font-weight: 400;
+    --yield-exchange-text-styles-promotion-chart-body-font-size: 16px;
+    --yield-exchange-text-styles-promotion-chart-body-letter-spacing: 0px;
+    --yield-exchange-text-styles-promotion-chart-body-line-height: 26px;
+    --yield-exchange-text-styles-promotion-chart-body-font-style: normal;
+    --yield-exchange-text-styles-buttons-font-family: "Montserrat-Regular", Helvetica;
+    --yield-exchange-text-styles-buttons-font-weight: 400;
+    --yield-exchange-text-styles-buttons-font-size: 16px;
+    --yield-exchange-text-styles-buttons-letter-spacing: 0px;
+    --yield-exchange-text-styles-buttons-line-height: 20px;
+    --yield-exchange-text-styles-buttons-font-style: normal;
+    --yield-exchange-text-styles-buttons-bold-font-family: "Montserrat-SemiBold", Helvetica;
+    --yield-exchange-text-styles-buttons-bold-font-weight: 600;
+    --yield-exchange-text-styles-buttons-bold-font-size: 16px;
+    --yield-exchange-text-styles-buttons-bold-letter-spacing: 0px;
+    --yield-exchange-text-styles-buttons-bold-line-height: 20px;
+    --yield-exchange-text-styles-buttons-bold-font-style: normal;
+    --yield-exchange-text-styles-small-buttons-font-family: "Montserrat-Regular", Helvetica;
+    --yield-exchange-text-styles-small-buttons-font-weight: 400;
+    --yield-exchange-text-styles-small-buttons-font-size: 14px;
+    --yield-exchange-text-styles-small-buttons-letter-spacing: 0px;
+    --yield-exchange-text-styles-small-buttons-line-height: 18px;
+    --yield-exchange-text-styles-small-buttons-font-style: normal;
+    --yield-exchange-text-styles-tooltip-buttons-font-family: "Montserrat-SemiBold", Helvetica;
+    --yield-exchange-text-styles-tooltip-buttons-font-weight: 600;
+    --yield-exchange-text-styles-tooltip-buttons-font-size: 12px;
+    --yield-exchange-text-styles-tooltip-buttons-letter-spacing: 0px;
+    --yield-exchange-text-styles-tooltip-buttons-line-height: 11px;
+    --yield-exchange-text-styles-tooltip-buttons-font-style: normal;
+    --yield-exchange-text-styles-tooltips-font-family: "Montserrat-Regular", Helvetica;
+    --yield-exchange-text-styles-tooltips-font-weight: 400;
+    --yield-exchange-text-styles-tooltips-font-size: 11px;
+    --yield-exchange-text-styles-tooltips-letter-spacing: 0px;
+    --yield-exchange-text-styles-tooltips-line-height: 14px;
+    --yield-exchange-text-styles-tooltips-font-style: normal;
+    --yield-exchange-text-styles-rates-font-family: "NeueMontreal-Bold", Helvetica;
+    --yield-exchange-text-styles-rates-font-weight: 700;
+    --yield-exchange-text-styles-rates-font-size: 45px;
+    --yield-exchange-text-styles-rates-letter-spacing: 0px;
+    --yield-exchange-text-styles-rates-line-height: 70px;
+    --yield-exchange-text-styles-rates-font-style: normal;
+    --yield-exchange-text-styles-chat-text-font-family: "Montserrat-Regular", Helvetica;
+    --yield-exchange-text-styles-chat-text-font-weight: 400;
+    --yield-exchange-text-styles-chat-text-font-size: 14px;
+    --yield-exchange-text-styles-chat-text-letter-spacing: 0px;
+    --yield-exchange-text-styles-chat-text-line-height: normal;
+    --yield-exchange-text-styles-chat-text-font-style: normal;
+    --yield-exchange-text-styles-body-text-font-family: "Montserrat-Light", Helvetica;
+    --yield-exchange-text-styles-body-text-font-weight: 300;
+    --yield-exchange-text-styles-body-text-font-size: 16px;
+    --yield-exchange-text-styles-body-text-letter-spacing: 0px;
+    --yield-exchange-text-styles-body-text-line-height: normal;
+    --yield-exchange-text-styles-body-text-font-style: normal;
+    --collection-1-yield-exchange-colors-yield-exchange-dark-purple: rgba(66, 0, 255, 1);
+    --collection-1-yield-exchange-colors-yield-exchange-green: rgba(68, 224, 170, 1);
+    --collection-1-yield-exchange-colors-yield-exchange-light-purple: rgba(239, 242, 254, 1);
+    --collection-1-yield-exchange-colors-darks: rgba(37, 37, 37, 1);
+    --collection-1-yield-exchange-colors-yield-exchange-purple: rgba(80, 99, 244, 1);
+}
+
+/*
+
+To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+
+<body data-collection-1-mode="100">
+    <!-- the rest of your content -->
+</body>
+
+You can apply the theme on any DOM node, not just the `body`
+
+*/
+
+[data-collection-1-mode="100"] {
+    --collection-1-yield-exchange-colors-yield-exchange-green: rgba(68, 224, 170, 1);
+    --collection-1-yield-exchange-colors-darks: rgba(37, 37, 37, 1);
+    --collection-1-yield-exchange-colors-yield-exchange-purple: rgba(80, 99, 244, 1);
+}
+
+[data-collection-1-mode="75"] {
+    --collection-1-yield-exchange-colors-yield-exchange-green: rgba(68, 224, 170, 1);
+    --collection-1-yield-exchange-colors-darks: rgba(40, 52, 75, 1);
+    --collection-1-yield-exchange-colors-yield-exchange-purple: rgba(145, 176, 249, 1);
+}
+
+[data-collection-1-mode="50"] {
+    --collection-1-yield-exchange-colors-yield-exchange-green: rgba(105, 230, 187, 1);
+    --collection-1-yield-exchange-colors-darks: rgba(113, 119, 132, 1);
+    --collection-1-yield-exchange-colors-yield-exchange-purple: rgba(173, 196, 250, 1);
+}
+
+[data-collection-1-mode="20"] {
+    --collection-1-yield-exchange-colors-yield-exchange-green: rgba(143, 236, 204, 1);
+    --collection-1-yield-exchange-colors-darks: rgba(156, 161, 170, 1);
+    --collection-1-yield-exchange-colors-yield-exchange-purple: rgba(200, 215, 252, 1);
+}
